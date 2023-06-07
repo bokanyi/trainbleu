@@ -1,4 +1,3 @@
-import React from "react";
 import { navigate } from "../states/routes";
 
 export default function Navbar() {
