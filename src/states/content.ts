@@ -12,6 +12,7 @@ type Reference = {
   description: string;
   details: string;
   link: string;
+  slides: string[]
 };
 
 type Publication = {
@@ -137,6 +138,7 @@ const railway: Reference[] = [
         description: `Vasúti pályaépítés, karbantartás.\n- felelős műszaki vezető – sínek összekötő hegesztése, sínek feltöltő-javító ívhegesztése, vasbetonaljak javításának kivitelezése, ágyazatragasztás\n- felelős műszaki vezető – karbantartás több ezer, Oetli-féle sínvándorlást gátló kengyelek felszerrelését végeztük el \n- kitérőfa csere, vasbetonalj csere, talpfa csere, vágánytisztítás, síncsere`,
         details: "",
         link: "",
+        slides: ["/sample01.jpg", "/sample02.jpg",],
       },
     {
       name: "",
@@ -144,6 +146,7 @@ const railway: Reference[] = [
       description: `Az Észak Erdő Zrt. tulajdonában lévő LÁÉV és Pálházai keskenynyomtávú vasúti pályában is végeztünk pályakarbantartási feladatokat, irányításom alatt.`,
       details: "",
       link: "",
+      slides: ["/sample02.jpg", "/sample01.jpg",],
     },
     {
       name: "",
@@ -151,6 +154,7 @@ const railway: Reference[] = [
       description: `Horvátországban, Zabno-Gradec állomásközben hegesztések geometriai mérését, méretre köszörülését, hibás hegesztések kiváltását irányítottam.  Valamint a műszaki átadást bonyolítottam le a sínhegesztések témában.`,
       details: "",
       link: "",
+      slides: ["/sample01.jpg", "/sample02.jpg",],
     },
     {
       name: "",
@@ -158,6 +162,7 @@ const railway: Reference[] = [
       description: `Nagykanizsa vasútállomáson, vasútikocsimosó vágányban Green Track környezetvédelmi gyűjtőtálca telepítését koordináltam, műszaki átadásán dolgoztam.`,
       details: "",
       link: "",
+      slides: ["/sample01.jpg", "/sample02.jpg",],
     },
 ];
 
@@ -168,6 +173,7 @@ const construction: Reference[] = [
     description: `Szabad kapacitásainkat a magasépítés területén, kőműves munkák  végzésére fordítottuk. \n- nyílászárók cseréje\n- falazás (gipszkarton rendszerek telepítése, Ytong, kerámia falazatok)\n- betonozás (sorompósziget kialakítása, zajvédőfal alapozása,  vízelvezető akna készítés, aljzat, födém beton készítés. \n- teljeskörű lakás felújítás gépészteammel\n- Dryvit hőszigetelő homlokzati vakolatrendszer készítése (a fal javítástól a nemesvakolat felhordásával bezárólag. )`,
     details: "",
     link: "",
+    slides:["/sample01.jpg", "/sample02.jpg",],
   },
 ]
 

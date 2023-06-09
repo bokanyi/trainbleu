@@ -20,7 +20,7 @@ export const Contact = () => {
         <h4>E-mail</h4>
         <p><a href={`mailto:${contact.email}`}
         >{contact.email}</a></p>
-      <img src="./public/contact.jpeg" alt="" />
+      <img src="./contact.jpeg" alt="" />
       </div>
     )
   }

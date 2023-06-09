@@ -1,0 +1,21 @@
+import { navigate } from "../states/routes";
+import useGlobal from "../hooks/useGlobal";
+import { $contact } from "../states/content";
+
+
+export const Footer = () => {
+    const contact = useGlobal($contact)
+
+  return (
+    <div className=" flex justify-between w-full sticky bottom-4 backdrop-blur-lg items-center px-4 py-2 z-10 rounded-lg" >
+   
+     
+        
+        <p className="cursor-pointer" onClick={() => navigate("/")}>TRAIN BLEU</p>
+        <p>Vizi Gábor</p>
+        <p>{contact.managingDirector}</p>
+        <p><a href={`mailto:${contact.email}`}>{contact.email}</a></p>
+     
+    </div>
+  )
+}

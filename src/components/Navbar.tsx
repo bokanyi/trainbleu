@@ -1,21 +1,25 @@
 import { navigate } from "../states/routes";
+import { CustomButton } from "./CustomButton";
 
 export default function Navbar() {
   return (
-    <div className=" flex justify-between w-full sticky top-0 backdrop-blur-lg items-end">
+   
+
+    <div className=" flex justify-between w-full sticky top-2 backdrop-blur-lg items-center px-4  py-2 z-10 rounded-lg">
    
       <div className="flex flex-col items-center">
         <img onClick={() => navigate("/")} src="/logo.png" alt="" className="w-20 cursor-pointer"/>
-        <p onClick={() => navigate("/")}>TRAIN BLAU</p>
+        <p onClick={() => navigate("/")}>TRAIN BLEU</p>
       </div>
-      <div  className="flex gap-4 " >
-        <button onClick={() => navigate("/")}>Főoldal</button>
-        <button onClick={() => navigate("/about")}>Rólunk</button>
-        <button onClick={() => navigate("/contact")}>Kapcsolat</button>
-        {/* <button onClick={() => navigate("/references")}>Referenciák</button> */}
-        <button onClick={() => navigate("/railway")}>Vasút</button>
-        <button onClick={() => navigate("/construction")}>Magasépítés</button>
+      <div  className="flex gap-2 " >
+        <CustomButton onPress={() => navigate("/")}><p>Főoldal</p></CustomButton>
+        <CustomButton onPress={() => navigate("/about")}  ><p>Rólunk</p></CustomButton>
+        <CustomButton onPress={() => navigate("/construction")} custom="bg-stone-300" ><p>Magasépítés</p></CustomButton>
+        <CustomButton onPress={() => navigate("/railway")} custom="bg-stone-300" ><p>Vasút</p></CustomButton>
+        <CustomButton onPress={() => navigate("/contact")}  ><p>Kapcsolat</p></CustomButton>
+  
       </div>
     </div>
+  
   );
 }

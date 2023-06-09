@@ -1,3 +1,4 @@
+import { Card } from "../components/Card";
 import useGlobal from "../hooks/useGlobal";
 import { $railway, $about, $construction } from "../states/content";
 
@@ -14,27 +15,32 @@ export const About = () => {
         <h3>{about.position}</h3>
 
         </div>
-        <img className="object-cover w-80 h-80 rounded-lg" src="./public/VG.jpg" alt="" />
+        <img className="object-cover w-80 h-80 rounded-lg" src="./VG.jpg" alt="" />
       </div>
-      <div  className="flex flex-col gap-4"> 
-      <h2>Munkakörök</h2>
-        {about.experiences.map((experience,index)=> {
-          return <div key={index}>
-            <h3>{experience.years}</h3>
-            <p>{experience.position}</p>
-            <p>{experience.company}</p>
-          </div>
-        })}
+      <div  className="flex flex-col gap-4 "> 
+        <h2>Munkakörök</h2>
+        
+          {about.experiences.map((experience,index)=> {
+            return <Card custom= {"max-w-md"} key={index}>
+              <h3>{experience.years}</h3>
+              <p>{experience.position}</p>
+              <p>{experience.company}</p>
+            </Card>
+          })}
+       
+        
         <h2>Referenciák</h2>
         {construction.map((reference, index)=> {
-          return <div key={index}>
+          return <Card key={index}>
             <p>{reference.description}</p>
-          </div>
+          </Card>
         })}
+
+        
         {railway.map((reference, index)=> {
-          return <div key={index}>
+          return <Card key={index}>
             <p>{reference.description}</p>
-          </div>
+          </Card>
         })}
        
         <h2>Publikációk</h2>
