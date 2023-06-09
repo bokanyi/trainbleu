@@ -1,8 +1,9 @@
-import { ButtonHTMLAttributes, FC, ReactNode, } from 'react'
+// import { ButtonHTMLAttributes, FC, ReactNode, } from 'react'
 
-import {useButton, AriaButtonProps} from 'react-aria';
-import {useRef, ElementType} from 'react';
+import {useButton} from 'react-aria';
+import {useRef} from 'react';
 
+/*
 type Props = {
     // click: () => void;
     // children: ReactNode;
@@ -11,6 +12,7 @@ type Props = {
     // props: ButtonHTMLAttributes<HTMLButtonElement>
     props: AriaButtonProps<ElementType>
 }
+*/
 
 // export const CustomButton: FC<Props> = ({props, color}) => {
 //   const ref = useRef<HTMLButtonElement>(null);
