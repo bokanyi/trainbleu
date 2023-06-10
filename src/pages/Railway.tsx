@@ -1,12 +1,15 @@
 import { Card } from "../components/Card";
 import { Carousel } from "../components/Carousel";
+import { Page } from "../components/Page";
 import useGlobal from "../hooks/useGlobal";
 import { $railway } from "../states/content";
 
 export const Railway = () => {
   const railway = useGlobal($railway);
   return (
-    <div className="flex flex-col gap-4">
+    <Page custom="gap-4 py-40" customInner="gap-4">
+
+    {/* <div className="flex flex-col gap-4"> */}
       {/* <img src="./public/contact.jpeg" alt="" /> */}
 
       {railway.map((reference, index) => {
@@ -18,6 +21,8 @@ export const Railway = () => {
           </div>
         );
       })}
-    </div>
+      <p>{import.meta.env.VITE_SECRET}</p>
+    {/* </div> */}
+    </Page>
   );
 };

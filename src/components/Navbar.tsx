@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
    
 
-    <div className=" flex justify-between w-full sticky top-2 backdrop-blur-lg items-center px-4  py-2 z-10 rounded-lg">
+    <div className="max-w-3xl flex justify-between w-full fixed top-2 backdrop-blur-lg items-center px-4  py-2 z-10 rounded-lg">
    
       <div className="flex flex-col items-center">
         <img onClick={() => navigate("/")} src="/logo.png" alt="" className="w-20 cursor-pointer"/>

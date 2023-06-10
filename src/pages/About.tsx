@@ -1,4 +1,5 @@
 import { Card } from "../components/Card";
+import { Page } from "../components/Page";
 import useGlobal from "../hooks/useGlobal";
 import { $railway, $about, $construction } from "../states/content";
 
@@ -8,8 +9,10 @@ export const About = () => {
   const railway = useGlobal($railway);
   const construction = useGlobal($construction);
   return (
-    <div className="py-40">
-      <div className="flex justify-between ">
+    <Page>
+
+    
+      <div className="flex justify-between py-40">
         <div>
         <h2>{about.name}</h2>
         <h3>{about.position}</h3>
@@ -51,6 +54,7 @@ export const About = () => {
           </div>
         })}
       </div>
-      </div>
+      
+    </Page>
   )
 }

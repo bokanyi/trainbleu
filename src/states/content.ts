@@ -127,6 +127,13 @@ const home: Home = {
       ],
       details: "",
     },
+    {
+      title: "Vasútépítés",
+      description: [
+        `- vasútépítés\n- városi vasút\n- kis vasútépítés`,
+      ],
+      details: "",
+    },
   ],
 };
 

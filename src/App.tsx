@@ -10,22 +10,22 @@ import { Footer } from './components/Footer'
 const App = () => {
 
   return (
-    <div className="flex flex-col items-center px-20 whitespace-pre-wrap bg-gradient-to-b from-stone-50 to-stone-100 ">
-      <div className='max-w-3xl flex flex-col items-center min-h-screen relative '>
+    <div className="flex flex-col items-center whitespace-pre-wrap bg-gradient-to-b from-stone-50 to-stone-200 relative ">
+      {/* <div className="flex flex-col items-center min-h-screen relative"> */}
 
       <Navbar />
  
         
-        <div className="m-auto py-40" >
+        {/* <div className="m-auto" > */}
         <Route path="/" > <Home/></Route>
         <Route path="/about" > <About/></Route>
         <Route path="/contact" > <Contact/></Route>
         {/* <Route path="/references" > <References/></Route> */}
         <Route path="/construction" > <Construction/></Route>
         <Route path="/railway" > <Railway/></Route>
-        </div>
+        {/* </div> */}
         <Footer/>
-      </div>
+      {/* </div> */}
     </div>
   )
 }
