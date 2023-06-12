@@ -12,11 +12,11 @@ export default function Navbar() {
         <p onClick={() => navigate("/")}>TRAIN BLEU</p>
       </div>
       <div  className="flex gap-2 " >
-        <CustomButton onPress={() => navigate("/")}><p>Főoldal</p></CustomButton>
-        <CustomButton onPress={() => navigate("/about")}  ><p>Rólunk</p></CustomButton>
+        <CustomButton onPress={() => navigate("/")} custom="bg-white"><p>Főoldal</p></CustomButton>
+        <CustomButton onPress={() => navigate("/about")} custom="bg-white" ><p>Rólunk</p></CustomButton>
         <CustomButton onPress={() => navigate("/construction")} custom="bg-stone-300" ><p>Magasépítés</p></CustomButton>
         <CustomButton onPress={() => navigate("/railway")} custom="bg-stone-300" ><p>Vasút</p></CustomButton>
-        <CustomButton onPress={() => navigate("/contact")}  ><p>Kapcsolat</p></CustomButton>
+        <CustomButton onPress={() => navigate("/contact")} custom="bg-white" ><p>Kapcsolat</p></CustomButton>
   
       </div>
     </div>

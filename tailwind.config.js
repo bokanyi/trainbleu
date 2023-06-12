@@ -7,7 +7,7 @@ export default {
     
     extend: {
       fontFamily: {
-        'sans': ['Roboto', 'sans-serif'],
+        'sans': ['Poltawski Nowy', 'sans-serif'],
         // Roboto: ['Roboto', 'sans-serif']
       },
       dropShadow: {

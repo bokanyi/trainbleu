@@ -29,14 +29,15 @@ export const CustomButton = (props:any ) => {
 //   const position = props.position || "inherit"
 //   const direction = props.direction || ""
 
-  const custom = props.custom || "bg-white"
+//   const custom = props.custom || "bg-white"
+
   return (
     <button {...buttonProps} ref={ref}
     // style={{background: bgColor}}
     className={`rounded-lg 
     transition-all  duration-700
-    hover:scale-110  hover:bg-stone-200 hover:rounded-full
-    px-4 py-2 ${custom} `} 
+    hover:scale-110  hover:bg-sky-300 
+    px-4 py-2 ${props.custom} `} 
     >
       {children}
     </button>

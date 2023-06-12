@@ -1,11 +1,12 @@
 import useGlobal from "../hooks/useGlobal";
 import { $contact } from "../states/content";
+import { Page } from "../components/Page"; 
 
 export const Contact = () => {
   const contact = useGlobal($contact)
 
     return (
-      <div className="w-full">
+      <Page custom="w-full py-40">
         <h1>Kapcsolat</h1>
         <h4>Székhely</h4>
         <p>{contact.headquarters}</p>
@@ -21,6 +22,6 @@ export const Contact = () => {
         <p><a href={`mailto:${contact.email}`}
         >{contact.email}</a></p>
       <img src="./contact.jpeg" alt="" />
-      </div>
+      </Page>
     )
   }

@@ -1,5 +1,6 @@
 import { Card } from "../components/Card";
 import { Carousel } from "../components/Carousel";
+import { Form } from "../components/Form";
 import { Page } from "../components/Page";
 import useGlobal from "../hooks/useGlobal";
 import { $railway } from "../states/content";
@@ -21,8 +22,9 @@ export const Railway = () => {
           </div>
         );
       })}
-      <p>{import.meta.env.VITE_SECRET}</p>
+      {/* <p>{import.meta.env.VITE_SECRET}</p> */}
     {/* </div> */}
+    <Form></Form>
     </Page>
   );
 };
