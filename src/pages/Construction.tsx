@@ -3,11 +3,12 @@ import { $construction } from "../states/content";
 import { Carousel } from "../components/Carousel";
 import { Card } from "../components/Card";
 import { Page } from "../components/Page";
+import { Form } from "../components/Form";
 
 export const Construction = () => {
     const construction = useGlobal($construction);
     return (
-        <Page custom="flex flex-col gap-4 h-screen" >
+        <Page custom="gap-4 py-40" customInner="gap-4">
 
       {/* <div className="flex flex-col gap-4" > */}
          {construction.map((reference, index)=> {
@@ -18,7 +19,7 @@ export const Construction = () => {
             
           </div>
         })}
-       
+       <Form></Form>
       {/* </div> */}
         </Page>
     )

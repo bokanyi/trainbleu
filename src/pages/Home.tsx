@@ -23,10 +23,10 @@ export const Home = () => {
       </Page>
 
       <Page custom={""}>
-        <div className="flex flex-wrap justify-between ">
+        <div className="w-[768px] flex flex-wrap justify-between ">
           <div className=" group flex gap-4 flex-col relative cursor-pointer ">
             <img
-              className=" w-[390px] h-[590px] object-cover "
+              className=" w-[380px] h-[590px] object-cover "
               src="/construction.jpg"
               onClick={() => navigate("/construction")}
               alt=""
@@ -42,7 +42,7 @@ export const Home = () => {
 
           <div className="group flex relative cursor-pointer ">
             <img
-              className=" w-[390px] h-[590px] object-cover"
+              className=" w-[380px] h-[590px] object-cover"
               src="/railway.jpg"
               alt=""
               onClick={() => navigate("/railway")}

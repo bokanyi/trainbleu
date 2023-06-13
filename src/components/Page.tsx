@@ -9,7 +9,7 @@ type Props= {
 export const Page: FC<Props> = ({children, custom, customInner}) => {
   return (
     <div className={`transition-colors w-screen flex justify-center ${custom}`}> 
-        <div className={`w-[800px] flex flex-col justify-center align-middle m-auto relative ${customInner}`}>
+        <div className={`max-w-3xl flex flex-col justify-center align-middle m-auto relative ${customInner}`}>
             {children}
         </div>
     </div>
