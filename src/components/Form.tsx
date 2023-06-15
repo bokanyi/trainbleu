@@ -83,7 +83,7 @@ export const Form = () => {
   return (
     <div className="relative py-20 items-center">
       {open && (
-        <Card custom="max-w-lg mb-10">
+        <Card custom="max-w-xs md:max-w-lg mb-10">
           <form
             className="flex flex-col gap-4 align-middle "
             onChange={() => {
@@ -93,8 +93,8 @@ export const Form = () => {
             }}
             onSubmit={(e) => handleSubmit(e)}
           >
-            <div className="flex gap-4 align-middle justify-between ">
-              <div className="flex flex-col gap-4 align-middle">
+            <div className="flex flex-col md:flex-row gap-4 align-middle justify-between ">
+              <div className="flex flex-col md:gap-4 align-middle">
                 <label htmlFor="name">Név:</label>
                 <input
                   id="name"
@@ -111,7 +111,7 @@ export const Form = () => {
                   <p className="text-red-500 underline">{errorMsg.name}</p>
                 )}
               </div>
-              <div className="flex flex-col gap-4 align-middle">
+              <div className="flex flex-col md:gap-4 align-middle">
                 <label htmlFor="email">E-mail:</label>
                 <input
                   id="email"
@@ -129,6 +129,8 @@ export const Form = () => {
                 )}
               </div>
             </div>
+            <div className="flex flex-col md:gap-4 align-middle">
+
             <label htmlFor="last-name">Üzenet:</label>
             <textarea
               className="bg-stone-200 rounded-md"
@@ -143,6 +145,7 @@ export const Form = () => {
             {errorMsg.text.length > 0 && (
               <p className="text-red-500 underline">{errorMsg.text}</p>
             )}
+            </div>
 
             <CustomButton
               custom="bg-stone-200 w-20"
@@ -169,7 +172,7 @@ export const Form = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="inline w-14 h-14"
+          className="md:inline hidden md:w-14"
         >
           <path
             strokeLinecap="round"
@@ -184,7 +187,7 @@ export const Form = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="inline w-14 h-14 "
+          className="md:inline hidden  md:w-14"
         >
           <path
             strokeLinecap="round"

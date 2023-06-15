@@ -31,6 +31,9 @@ export default {
       },
       transitionProperty: {
         'rounded': 'rounded',
+      },
+      maxWidth: {
+        's': '300px',
       }
     },
   },

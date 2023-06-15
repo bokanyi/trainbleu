@@ -29,17 +29,17 @@
   }
 
   h1{
-    font-size: 5em;
+    font-size: 2.6em;
     font-weight: 500;
   }
   h2{
-    font-size: 3em;
+    font-size: 2em;
   }
   h3{
     font-size: 2em;
   }
   h4{
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 500;
   }
 
@@ -51,6 +51,30 @@
 
   html {
   }
+
+  @media (min-width: 768px) { 
+    h1{
+    
+      font-size: 5em;
+      font-weight: 500;
+    }
+    h2{
+      font-size: 3em;
+    }
+    h3{
+      font-size: 2em;
+    }
+    h4{
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+  
+    p{
+      font-size: 1em ;
+      line-height: 1.6em;
+      font-weight: 500;
+    }
+   }
 }
 
 

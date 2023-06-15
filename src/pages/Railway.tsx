@@ -15,7 +15,7 @@ export const Railway = () => {
 
       {railway.map((reference, index) => {
         return (
-          <div className="max-w-3xl" key={index}>
+          <div className="max-w-s md:max-w-3xl" key={index}>
             <Carousel slides={reference.slides}></Carousel>
 
             <Card><p>{reference.description}</p></Card>

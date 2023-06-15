@@ -7,7 +7,7 @@ export const Contact = () => {
   const contact = useGlobal($contact);
 
   return (
-    <Page custom="py-40">
+    <Page custom="py-16 md:py-40">
       <h1>Kapcsolat</h1>
 
     <div className="flex flex-wrap gap-4 mb-10">

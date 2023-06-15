@@ -24,7 +24,7 @@ export const Carousel:FC<Props> = ({slides}) => {
       //   clickable: true,
       // }}
       // modules={[Pagination]}
-      className="mySwiper"
+      // className=" mySwiper"
     //   autoplay={{
     //     delay: 5000,
     //     disableOnInteraction: false
@@ -32,8 +32,8 @@ export const Carousel:FC<Props> = ({slides}) => {
    
     >
       {slides.map((slide)=> 
-        <SwiperSlide>
-          <img src={slide}></img>
+        <SwiperSlide className=''>
+          <img   src={slide}></img>
           </SwiperSlide>
       )}
       

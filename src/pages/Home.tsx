@@ -23,10 +23,10 @@ export const Home = () => {
       </Page>
 
       <Page custom={""}>
-        <div className="w-[768px] flex flex-wrap justify-between ">
-          <div className=" group flex gap-4 flex-col relative cursor-pointer ">
+        <div className="w-[300] flex flex-col md:w-[768px] md:flex-wrap md:flex-row justify-between gap-24 md:gap-0">
+          <div className="group flex relative cursor-pointer ">
             <img
-              className=" w-[380px] h-[590px] object-cover "
+              className="md:w-[375px] h-[500px] md:h-[590px] object-cover "
               src="/construction.jpg"
               onClick={() => navigate("/construction")}
               alt=""
@@ -42,7 +42,7 @@ export const Home = () => {
 
           <div className="group flex relative cursor-pointer ">
             <img
-              className=" w-[380px] h-[590px] object-cover"
+              className="md:w-[375px] h-[500px] md:h-[590px] object-cover"
               src="/railway.jpg"
               alt=""
               onClick={() => navigate("/railway")}
@@ -59,19 +59,22 @@ export const Home = () => {
         </div>
       </Page>
 
-    <Page custom={"h-screen"}>
+    <Page custom={"py-20 md:py-0 md:h-screen"}>
 
-      <div className="flex justify-between">
-        <div>
+      <div className="md:w-[768px] flex flex-wrap md:justify-between md:items-center">
+        <div className="grow shrink">
           <h2>{about.name}</h2>
           <h3 className="whitespace-pre-wrap">{about.position}</h3>
-          <h2  onClick={() => navigate("/about")} className="inline-block cursor-pointer text-end mt-20 shadow-none px-4 transition-shadow duration-700 hover:shadow-inner underline">Rólunk</h2>
         </div>
+      <div className="grow shrink md:flex md:flex-col md:items-center ">
         <img
-          className="object-cover w-80 h-80 rounded-full"
+          className="object-cover w-52 h-52 md:w-80 md:h-80 rounded-full"
           src="/VG.jpg"
           alt=""
         />
+
+          <h2  onClick={() => navigate("/about")} className="inline cursor-pointer mt-20 shadow-none px-4 transition-shadow duration-700 hover:shadow-inner underline">Rólunk</h2>
+      </div>
       </div>
 
 

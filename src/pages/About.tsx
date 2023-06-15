@@ -10,10 +10,8 @@ export const About = () => {
   const construction = useGlobal($construction);
   return (
     <Page>
-
-    
-      <div className="flex justify-between py-40">
-        <div>
+      <div className="md:flex md:justify-between py-40">
+        <div className='pb-10 md:pb-0'>
         <h2>{about.name}</h2>
         <h3>{about.position}</h3>
 
