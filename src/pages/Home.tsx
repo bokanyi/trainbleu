@@ -12,9 +12,10 @@ export const Home = () => {
     <div className="">
       <Page custom={"h-screen"} >
 
-        <div className="whitespace-pre-wrap">
+        <div className="">
 
-        <h1 className="italic inline text-stone-700 transition-shadow ">{home.motto}</h1>
+        {/* <h1 className="animate-back animate-text italic text-stone-700 bg-calc bg-no-repeat bg-clip-padding truncate transition-shadow ">{home.motto}</h1> */}
+        <h1 className="italic inline-block text-stone-700 transition-shadow ">{home.motto}</h1>
         </div>
         <div className="text-end"> 
         <h2  onClick={() => navigate("/about")} className="inline-block cursor-pointer text-end mt-20 shadow-none px-4 transition-all  duration-700 hover:shadow-inner underline text-red-00  border-stone-500">Kapcsolat</h2>
@@ -69,7 +70,7 @@ export const Home = () => {
       <div className="grow shrink md:flex md:flex-col md:items-center ">
         <img
           className="object-cover w-52 h-52 md:w-80 md:h-80 rounded-full"
-          src="/VG.jpg"
+          src="/VG2011.jpg"
           alt=""
         />
 

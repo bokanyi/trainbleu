@@ -32,8 +32,8 @@ export const Carousel:FC<Props> = ({slides}) => {
    
     >
       {slides.map((slide)=> 
-        <SwiperSlide className=''>
-          <img   src={slide}></img>
+        <SwiperSlide className='h-60 md:h-128 bg-white flex justify-center'>
+          <img  className='object-contain' src={slide}></img>
           </SwiperSlide>
       )}
       

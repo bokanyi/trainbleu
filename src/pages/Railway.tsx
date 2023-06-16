@@ -18,7 +18,10 @@ export const Railway = () => {
           <div className="max-w-s md:max-w-3xl" key={index}>
             <Carousel slides={reference.slides}></Carousel>
 
-            <Card><p>{reference.description}</p></Card>
+            <Card>
+              <h4>{reference.name}</h4>
+              <p>{reference.description}</p>
+              </Card>
           </div>
         );
       })}

@@ -1,13 +1,12 @@
 import { Card } from "../components/Card";
 import { Page } from "../components/Page";
 import useGlobal from "../hooks/useGlobal";
-import { $railway, $about, $construction } from "../states/content";
+import { $about, } from "../states/content";
 
 
 export const About = () => {
   const about = useGlobal($about);
-  const railway = useGlobal($railway);
-  const construction = useGlobal($construction);
+
   return (
     <Page>
       <div className="md:flex md:justify-between py-40">
@@ -16,7 +15,7 @@ export const About = () => {
         <h3>{about.position}</h3>
 
         </div>
-        <img className="object-cover w-80 h-80 rounded-lg" src="./VG.jpg" alt="" />
+        <img className="object-cover w-80 h-80 rounded-lg" src="./VG2011.jpg" alt="" />
       </div>
       <div  className="flex flex-col gap-4 "> 
         <h2>Munkakörök</h2>
@@ -31,18 +30,18 @@ export const About = () => {
        
         
         <h2>Referenciák</h2>
-        {construction.map((reference, index)=> {
+        {about.references.map((reference, index)=> {
           return <Card key={index}>
             <p>{reference.description}</p>
           </Card>
         })}
 
         
-        {railway.map((reference, index)=> {
+        {/* {railway.map((reference, index)=> {
           return <Card key={index}>
             <p>{reference.description}</p>
           </Card>
-        })}
+        })} */}
        
         <h2>Publikációk</h2>
         {about.publications.map((publication, index) => {

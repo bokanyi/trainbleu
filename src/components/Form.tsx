@@ -4,6 +4,7 @@ import { Card } from "./Card";
 import emailjs from "emailjs-com";
 
 const defaultInputValues = {
+  user: "trainbleukft@gmail.com",
   name: "",
   email: "",
   text: "",
@@ -58,7 +59,7 @@ export const Form = () => {
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
           setOpen(false);
-          setValues({ name: "", email: "", text: "" });
+          setValues({ user: "trainbleukft@gmail.com", name: "", email: "", text: "" });
         },
         function (error) {
           console.log("FAILED...", error);

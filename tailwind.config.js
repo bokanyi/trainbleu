@@ -34,7 +34,30 @@ export default {
       },
       maxWidth: {
         's': '300px',
-      }
+      },
+      keyframes: {
+        slide: {
+          '0%': {width: '0%'  },
+          '100%': {  width: '100%' },
+        },
+        back: {
+          '0%': {backgroundSize: '0 200%' },
+        },
+        text: {
+          '50%': {backgroundPosition: '0 -100%,0 0' },
+        },
+         
+        },
+          animation: {
+            'back': 'back .7s infinite steps(1)',
+            'text': 'text calc(var(--n)*.3s) steps(var(--n)) forwards;',
+            'slide': 'slide 3.5s   steps(30, end) infinite',
+          },
+          backgroundSize: {
+            'calc': 'calc(var(--n)*1ch) 200%',
+          }
+        
+        
     },
   },
   plugins: [],

@@ -8,7 +8,7 @@ import { Form } from "../components/Form";
 export const Construction = () => {
     const construction = useGlobal($construction);
     return (
-        <Page custom="gap-4 py-40" customInner="gap-4">
+        <Page custom="gap-4 py-40 md:h-screen" customInner="gap-4" >
 
 
       {/* <div className="flex flex-col gap-4" > */}
