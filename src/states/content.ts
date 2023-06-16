@@ -184,7 +184,7 @@ const construction: Reference[] = [
     date: "2022-2023",
     description: `Szabad kapacitásainkat a magasépítés területén, kőműves munkák  végzésére fordítottuk. \n- nyílászárók cseréje\n- falazás (gipszkarton rendszerek telepítése, Ytong, kerámia falazatok)\n- betonozás (sorompósziget kialakítása, zajvédőfal alapozása,  vízelvezető akna készítés, aljzat, födém beton készítés. \n- teljeskörű lakás felújítás gépészteammel\n- Dryvit hőszigetelő homlokzati vakolatrendszer készítése (a fal javítástól a nemesvakolat felhordásával bezárólag. )`,
     details: "",
-    slides:["/construct_01_dryvit.jpeg", "/construct_01_hoszigeteles.jpg", "/construct_01_nzilaszaro.jpeg", "/construct_01_nzilaszaro2.jpg", "/construct_01_nzilaszaro3.jpg", "/construct_01_teto.jpeg","/construct_01_tapeta.jpg" , "/construct_01_utepites.jpg" , "/construct_02_furdo.jpg" ,"/construct_02_futes.jpg", "/construct_02_kandallo.jpg", "/construct_02_toloajto.jpg" , "/construct_02_toloajto2.jpg", "/construct_03_kavics.jpg", "/construct_03_kerites.jpg", "/construct_03_kavics.jpg"],
+    slides:["/construct_01_dryvit.jpeg", "/construct_01_hoszigeteles.jpg", "/construct_01_nzilaszaro.jpeg", "/construct_01_nzilaszaro2.jpg", "/construct_01_nzilaszaro3.jpg", "/construct_01_teto.jpeg","/construct_01_tapeta.jpg" , "/construct_01_utepites.jpg" , "/construct_02_furdo.jpg" ,"/construct_02_futes.jpg", "/construct_02_kandallo.jpg", "/construct_02_toloajto.jpg" , "/construct_02_toloajto2.jpg", "/construct_03_terko.jpg", "/construct_03_kerites.jpg", "/construct_03_kavics.jpg"],
   },
 ]
 

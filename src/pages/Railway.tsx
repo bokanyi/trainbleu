@@ -8,10 +8,11 @@ import { $railway } from "../states/content";
 export const Railway = () => {
   const railway = useGlobal($railway);
   return (
-    <Page custom="gap-4 py-40" customInner="gap-4">
+    <Page custom="gap-4 py-16 md:py-40 md:min-h-screen" customInner="gap-4">
 
     {/* <div className="flex flex-col gap-4"> */}
       {/* <img src="./public/contact.jpeg" alt="" /> */}
+      <h1>Vasút</h1>
 
       {railway.map((reference, index) => {
         return (

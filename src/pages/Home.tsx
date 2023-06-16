@@ -10,7 +10,7 @@ export const Home = () => {
   const about = useGlobal($about);
   return (
     <div className="">
-      <Page custom={"h-screen"} >
+      <Page custom={"min-h-screen"} >
 
         <div className="">
 
