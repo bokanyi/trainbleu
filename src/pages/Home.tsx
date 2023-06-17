@@ -18,7 +18,7 @@ export const Home = () => {
         <h1 className="italic inline-block text-stone-700 transition-shadow ">{home.motto}</h1>
         </div>
         <div className="text-end"> 
-        <h2  onClick={() => navigate("/about")} className="inline-block cursor-pointer text-end mt-20 shadow-none px-4 transition-all  duration-700 hover:shadow-inner underline text-red-00  border-stone-500">Kapcsolat</h2>
+        <h2  onClick={() => navigate("/contact")} className="inline-block cursor-pointer text-end mt-20 shadow-none px-4 transition-all  duration-700 hover:shadow-inner underline text-red-00  border-stone-500">Kapcsolat</h2>
         </div>
         
       </Page>
