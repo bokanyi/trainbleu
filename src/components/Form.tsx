@@ -149,7 +149,7 @@ export const Form = () => {
             </div>
 
             <CustomButton
-              custom="bg-stone-200 w-20"
+              custom="bg-sky-300 w-20"
               type="submit"
               //   onPress={(e) => handleSubmit(e)}
               //   style={{ marginTop: 10 }}

@@ -33,7 +33,9 @@ export const Home = () => {
               alt=""
             />
             <div className="absolute bottom-0 p-4 bg-gradient-to-b from-transparent to-stone-200 w-full " >
-              <h2 className="transition-shadow shadow-none duration-700 underline group-hover:shadow-inner inline">Magasépítés</h2>
+              <h2 className="transition-shadow shadow-none duration-700 underline group-hover:shadow-inner inline"
+              onClick={() => navigate("/railway")}
+              >Magasépítés</h2>
 
               <p>{home.content[0].description}</p>
              
@@ -52,7 +54,9 @@ export const Home = () => {
             
             <div className="absolute bottom-0 p-4 bg-gradient-to-b from-transparent  to-stone-200 w-full ">
 
-              <h2 className=" transition-shadow shadow-none duration-500  underline group-hover:shadow-inner  inline">Vasút</h2>
+              <h2 className=" transition-shadow shadow-none duration-500  underline group-hover:shadow-inner inline"
+              onClick={() => navigate("/railway")}
+              >Vasút</h2>
               <p>{home.content[1].description}</p>
             </div>
             

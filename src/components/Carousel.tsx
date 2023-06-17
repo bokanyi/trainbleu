@@ -1,8 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Pagination, Navigation } from "swiper";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
+import { Swiper, SwiperSlide,  } from 'swiper/react';
+ import { Navigation } from "swiper"; 
 import 'swiper/css';
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { FC } from 'react';
 
 type Props = {
@@ -20,11 +22,9 @@ export const Carousel:FC<Props> = ({slides}) => {
       onSwiper={(swiper) => console.log(swiper)}
       loop={true}
       grabCursor={true}
-      
-      // pagination={{
-      //   clickable: true,
-      // }}
-      // modules={[Pagination]}
+      navigation
+     
+      modules={[Navigation]}
       // className=" mySwiper"
     //   autoplay={{
     //     delay: 5000,

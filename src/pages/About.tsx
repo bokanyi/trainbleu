@@ -8,8 +8,8 @@ export const About = () => {
   const about = useGlobal($about);
 
   return (
-    <Page>
-      <div className="md:flex md:justify-between py-40">
+    <Page custom="py-16 md:py-40 md:min-h-screen">
+      <div className="md:flex md:justify-between ">
         <div className='pb-10 md:pb-0'>
         <h1>{about.name}</h1>
         <h3>{about.position}</h3>
