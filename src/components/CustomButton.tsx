@@ -36,7 +36,7 @@ export const CustomButton = (props:any ) => {
     // style={{background: bgColor}}
     className={`rounded-lg 
     transition-all  duration-700
-    hover:scale-110  hover:bg-sky-300 
+    hover:scale-110  hover:bg-blue-400 
     px-4 py-2 ${props.custom} `} 
     >
       {children}

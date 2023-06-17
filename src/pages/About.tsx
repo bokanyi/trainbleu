@@ -29,10 +29,12 @@ export const About = () => {
           })}
        
         
-        <h2>Referenciák</h2>
-        {about.references.map((reference, index)=> {
+        <h2>Szolgáltatásaink</h2>
+        {about.services.map((service, index)=> {
           return <Card key={index}>
-            <p>{reference.description}</p>
+            <h3 className="mb-4">{service.name}</h3>
+            <p>{service.description}</p>
+            <p>{service.details}</p>
           </Card>
         })}
 

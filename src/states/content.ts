@@ -26,7 +26,7 @@ type About = {
   about: string;
   resume: string;
   experiences: Experience[];
-  references: Reference[];
+  services: Reference[];
   publications: Publication[];
 };
 
@@ -37,6 +37,7 @@ type Contact = {
   branchOffice: string;
   managingDirector: string;
   administration: string;
+  constructor: string;
 };
 
 type BasicContent = {
@@ -47,7 +48,7 @@ type BasicContent = {
 
 const about: About = {
   name: "Vizi Gábor",
-  position: `Közlekedésépítő mérnök\nFelelős műszaki vezető`,
+  position: `Közlekedésépítő mérnök\nFelelős műszaki vezető\nMV-KÉ 16 50529`,
   about: "",
   resume: "",
   experiences: [
@@ -67,42 +68,43 @@ const about: About = {
       company: "MÁV Rt. Szolnoki Pályagazdálkodási Főnökség",
     },
   ],
-  references: [
+  services: [
     {
-      name: "",
-      date: "2022-2023",
-      description: `Szabad kapacitásainkat a magasépítés területén, kőműves munkák  végzésére fordítottuk. \n- nyílászárók cseréje\n- falazás (gipszkarton rendszerek telepítése, Ytong, kerámia falazatok)\n- betonozás (sorompósziget kialakítása, zajvédőfal alapozása,  vízelvezető akna készítés, aljzat, födém beton készítés. \n- teljeskörű lakás felújítás gépészteammel\n- Dryvit hőszigetelő homlokzati vakolatrendszer készítése (a fal javítástól a nemesvakolat felhordásával bezárólag. )`,
-      details: "",
+      name: "Ház/Lakás felújítás",
+      date: "",
+      description: `Vasúti munkáink melett, megmaradó szabad kapacitásainkat a magasépítés területén, kőműves munkák végzésére fordítjuk.`,
+      details: `- Hőszigetelés (fal, födém, padló)\n- Nyílászárók cseréje\n- Dryvit hőszigetelő homlokzati vakolatrendszer készítése (a fal javítástól a nemesvakolat
+      felhordásával bezárólag. )\n- Belső terek átalakítása\n- Falazás (gipszkarton rendszerek telepítése, Ytong, kerámia falazatok)\n- Betonozás ( alapozás, vasbeton készítés, áthidalók, betonfelületjavítás)\n- Teljeskörű lakás felújítás\n- Járda-, kerítés-, kertépítés`,
       slides: [],
     },
     {
-      name: "",
+      name: "Vasúti pályaépítés, karbantartás, felügyeleti tevékenység",
       date: "2007-2022",
-      description: `Vasúti pályaépítés, karbantartás.\n- felelős műszaki vezető – sínek összekötő hegesztése, sínek feltöltő-javító ívhegesztése, vasbetonaljak javításának kivitelezése, ágyazatragasztás\n- felelős műszaki vezető – karbantartás több ezer, Oetli-féle sínvándorlást gátló kengyelek felszerrelését végeztük el \n- kitérőfa csere, vasbetonalj csere, talpfa csere, vágánytisztítás, síncsere`,
-      details: "",
+      description: ``,
+      details: `– Vasbetonaljak furatainak javítása\n- Sínek feltöltő-javító ívhegesztése\n- Ágyazatragasztás\n- Talpfa-, kitérőfa-, vasbetonalj csere\n- Oetli-féle sínvándorlás gátló felszerelése\n- Iparvágányok felügyelete\n- Lefejtő tálcák magánaljainak javítása`,
       slides: [],
     },
-    {
-      name: "",
-      date: "",
-      description: `Az Észak Erdő Zrt. tulajdonában lévő LÁÉV és Pálházai keskenynyomtávú vasúti pályában is végeztünk pályakarbantartási feladatokat, irányításom alatt.`,
-      details: "",
-      slides: [],
-    },
-    {
-      name: "",
-      date: "",
-      description: `Horvátországban, Zabno-Gradec állomásközben hegesztések geometriai mérését, méretre köszörülését, hibás hegesztések kiváltását irányítottam.  Valamint a műszaki átadást bonyolítottam le a sínhegesztések témában.`,
-      details: "",
-      slides: [],
-    },
-    {
-      name: "",
-      date: "",
-      description: `Nagykanizsa vasútállomáson, vasútikocsimosó vágányban Green Track környezetvédelmi gyűjtőtálca telepítését koordináltam, műszaki átadásán dolgoztam.`,
-      details: "",
-      slides: [],
-    },
+    // {
+    //   name: "",
+    //   date: "",
+    //   description: `Az Észak Erdő Zrt. tulajdonában lévő LÁÉV és Pálházai keskenynyomtávú vasúti pályában is végeztünk pályakarbantartási feladatokat, irányításom alatt.`,
+    //   details: "",
+    //   slides: [],
+    // },
+    // {
+    //   name: "",
+    //   date: "",
+    //   description: `Horvátországban, Zabno-Gradec állomásközben hegesztések geometriai mérését, méretre köszörülését, hibás hegesztések kiváltását irányítottam.  Valamint a műszaki átadást bonyolítottam le a sínhegesztések témában.`,
+    //   details: "",
+    //   slides: [],
+    // },
+    // {
+    //   name: "",
+    //   date: "",
+    //   description: `Nagykanizsa vasútállomáson, vasútikocsimosó vágányban Green Track környezetvédelmi gyűjtőtálca telepítését koordináltam, műszaki átadásán dolgoztam.`,
+    //   details: "",
+    //   slides: [],
+    // },
   ],
   publications: [
     {
@@ -145,8 +147,9 @@ const railway: Reference[] = [
         description: `Gyakori probléma a vasbeton pályákon, a beton romlásából származó (vegyi és/vagy fizikai erőhatásokból adódó) leerősítő erő vesztés. Ennek visszaállítását, a leerősítés és a beton javítását szakszerűen elvégzi cégünk. A metró építésénél alkalmazott anyagokkal dolgozunk, a technológia szigorú betartásával.
         `,
         details: "",
-        slides: ["/vasbetonaljjavitas.jpg", ],
+        slides: [ ],
       },
+
     {
       name: "Ágyazatragasztás, apró kövek ragasztása műgyantával:",
       date: "",
@@ -161,7 +164,7 @@ const railway: Reference[] = [
       description: `Százezres nagyságrendű referenciánk van a vasúti vasbetonaljak javítása területén.\nValamennyi, MÁV Zrt. által elfogadott technológiát ismerjük, és gyakorlatban használjuk.\nKiemelném költséghatékonysága miatt a vasbetonaljas kitérők esetét. Ebben az esetben a kitérők vasbetonaljaiban, a beszakadt síncsavarok kiszedéséről, a roncsolódott műanyag (kívül-belül menetes) betét kiszereléséről, és a furat új anyaggal történő javítását végezzük el, a kitérőben lévő betonalj cseréje, ágyazati gerendájának fellazítása nélkül.
       `,
       details: "",
-      slides: ["/furatjavitas.jpg",],
+      slides: ["/furatjavitas.jpg","/vasbetonaljjavitas.jpg"],
     },
     {
       name: "Oetl féle sínvándorlásgátló felszerelése:",
@@ -180,12 +183,55 @@ const railway: Reference[] = [
 
 const construction: Reference[] = [
   {
-    name: "",
-    date: "2022-2023",
-    description: `Szabad kapacitásainkat a magasépítés területén, kőműves munkák  végzésére fordítottuk. \n- nyílászárók cseréje\n- falazás (gipszkarton rendszerek telepítése, Ytong, kerámia falazatok)\n- betonozás (sorompósziget kialakítása, zajvédőfal alapozása,  vízelvezető akna készítés, aljzat, födém beton készítés. \n- teljeskörű lakás felújítás gépészteammel\n- Dryvit hőszigetelő homlokzati vakolatrendszer készítése (a fal javítástól a nemesvakolat felhordásával bezárólag. )`,
+    name: `Hőszigetelés (fal, födém, padló)`,
+    date: "",
+    description: "",
     details: "",
-    slides:["/construct_01_dryvit.jpeg", "/construct_01_hoszigeteles.jpg", "/construct_01_nzilaszaro.jpeg", "/construct_01_nzilaszaro2.jpg", "/construct_01_nzilaszaro3.jpg", "/construct_01_teto.jpeg","/construct_01_tapeta.jpg" , "/construct_01_utepites.jpg" , "/construct_02_furdo.jpg" ,"/construct_02_futes.jpg", "/construct_02_kandallo.jpg", "/construct_02_toloajto.jpg" , "/construct_02_toloajto2.jpg", "/construct_03_terko.jpg", "/construct_03_kerites.jpg", "/construct_03_kavics.jpg"],
+    slides:["/construct_01_dryvit.jpeg", "/construct_01_hoszigeteles.jpg"],
   },
+  {
+    name: `Nyílászárók cseréje`,
+    date: "",
+    description: "",
+    details: "",
+    slides:["/construct_01_nzilaszaro.jpeg", "/construct_01_nzilaszaro2.jpg", "/construct_01_nzilaszaro3.jpg"],
+  },
+  // {
+  //   name: "",
+  //   date: "",
+  //   description: `Dryvit hőszigetelő homlokzati vakolatrendszer készítése `,
+  //   details: "",
+  //   slides:["/construct_01_dryvit.jpeg", "/construct_01_hoszigeteles.jpg"],
+  // },
+  {
+    name: `Belső terek átalakítása`,
+    date: "",
+    description: "",
+    details: "",
+    slides:["/construct_01_tapeta.jpg" , "/construct_02_furdo.jpg" , "/construct_02_kandallo.jpg", "/construct_02_toloajto.jpg" , "/construct_02_toloajto2.jpg"],
+  },
+  {
+    name: `Teljeskörű lakás felújítás`,
+    date: "",
+    description: "",
+    details: "",
+    slides:["/construct_01_teto.jpeg","/construct_02_futes.jpg",],
+  },
+  {
+    name: `Járda-, kerítés-, kertépítés`,
+    date: "",
+    description: "" ,
+    details: "",
+    slides:["/construct_01_utepites.jpg" ,"/construct_03_terko.jpg", "/construct_03_kerites.jpg", "/construct_03_kavics.jpg"],
+  },
+ 
+  // {
+  //   name: "",
+  //   date: "",
+  //   description: `Járda-, kerítés-, kertépítés`,
+  //   details: "",
+  //   slides:["/construct_01_dryvit.jpeg", "/construct_01_hoszigeteles.jpg", "/construct_01_nzilaszaro.jpeg", "/construct_01_nzilaszaro2.jpg", "/construct_01_nzilaszaro3.jpg", "/construct_01_teto.jpeg","/construct_01_tapeta.jpg" , "/construct_01_utepites.jpg" , "/construct_02_furdo.jpg" ,"/construct_02_futes.jpg", "/construct_02_kandallo.jpg", "/construct_02_toloajto.jpg" , "/construct_02_toloajto2.jpg", "/construct_03_terko.jpg", "/construct_03_kerites.jpg", "/construct_03_kavics.jpg"],
+  // },
 ]
 
 const contact: Contact = {
@@ -195,6 +241,7 @@ const contact: Contact = {
   branchOffice: "5235 Tiszabura Kossuth L. út 111.",
   managingDirector: "+36 20 9643 597",
   administration: "+36 20 382 7726",
+  constructor: "+36 20 808 9132",
 };
 
 export const $about = new BehaviorSubject<About>(about);

@@ -90,7 +90,7 @@ export const Form = () => {
             onChange={() => {
               validation(values.name, values.email, values.text);
 
-              console.log(helperText);
+              // console.log(helperText);
             }}
             onSubmit={(e) => handleSubmit(e)}
           >
@@ -99,7 +99,7 @@ export const Form = () => {
                 <label htmlFor="name">Név:</label>
                 <input
                   id="name"
-                  className="bg-stone-200 rounded-md"
+                  className="bg-blue-200 rounded-md"
                   value={values.name}
                   onChange={(e) => {
                     setValues({ ...values, name: e.target.value });
@@ -116,7 +116,7 @@ export const Form = () => {
                 <label htmlFor="email">E-mail:</label>
                 <input
                   id="email"
-                  className="bg-stone-200 rounded-md"
+                  className="bg-blue-200 rounded-md"
                   value={values.email}
                   onChange={(e) => {
                     setValues({ ...values, email: e.target.value });
@@ -134,7 +134,7 @@ export const Form = () => {
 
             <label htmlFor="last-name">Üzenet:</label>
             <textarea
-              className="bg-stone-200 rounded-md"
+              className="bg-blue-200 rounded-md"
               value={values.text}
               onChange={(e) => {
                 setValues({ ...values, text: e.target.value });
@@ -149,7 +149,7 @@ export const Form = () => {
             </div>
 
             <CustomButton
-              custom="bg-sky-300 w-20"
+              custom="bg-blue-700 w-20 text-white"
               type="submit"
               //   onPress={(e) => handleSubmit(e)}
               //   style={{ marginTop: 10 }}
@@ -161,7 +161,7 @@ export const Form = () => {
       )}
 
       <h2
-        className="inline-block cursor-pointer shadow-none px-4 transition-all  duration-700 hover:shadow-inner underline text-red-00  border-stone-500 italic"
+        className="inline-block cursor-pointer shadow-none px-4 transition-all  duration-700 hover:shadow-inner underline text-red-00 border-blue-500 italic"
         onClick={() => setOpen(true)}
       >
         Kérjen árajánlatot

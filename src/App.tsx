@@ -10,7 +10,7 @@ import { Footer } from './components/Footer'
 const App = () => {
 
   return (
-    <div className="flex flex-col items-center whitespace-pre-wrap bg-gradient-to-b from-white to-stone-200 relative ">
+    <div className="flex flex-col items-center whitespace-pre-wrap bg-gradient-to-b from-white to-blue-200 relative ">
       {/* <div className="flex flex-col items-center min-h-screen relative"> */}
 
       <Navbar />

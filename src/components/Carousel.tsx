@@ -18,8 +18,6 @@ export const Carousel:FC<Props> = ({slides}) => {
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
       loop={true}
       grabCursor={true}
       navigation
@@ -30,11 +28,10 @@ export const Carousel:FC<Props> = ({slides}) => {
     //     delay: 5000,
     //     disableOnInteraction: false
     // }}
-   
     >
       
       {slides.map((slide)=> 
-        <SwiperSlide className='h-60 md:h-128 bg-white flex justify-center mb-4
+        <SwiperSlide key={slide} className='h-60 md:h-128 bg-white flex justify-center mb-4
         md:p-8 rounded-xl'>
             
           <img  className='object-contain' src={slide}></img>

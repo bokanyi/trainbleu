@@ -19,8 +19,8 @@ export default {
        
       },
       boxShadow: {
-        'inner': 'inset 100vw 0 0 0 #7dd3fc',
-        'none': 'inset 0 0 0 0 #7dd3fc',
+        'inner': 'inset 100vw 0 0 0 rgb(59 130 246)',
+        'none': 'inset 0 0 0 0 rgb(59 130 246)',
       },
       width:{
         '88': '22rem',

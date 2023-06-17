@@ -14,22 +14,23 @@ export const Contact = () => {
 
       <Card custom="grow shrink">
         <h4>Székhely</h4>
-        <p>{contact.headquarters}</p>
-        <h4>Telephely</h4>
-        <p>{contact.site}</p>
+        <p className="mb-4">{contact.headquarters}</p>
         <h4>Fióktelep</h4>
-        <p>{contact.branchOffice}</p>
-      </Card>
-
-      <Card custom="grow shrink">
-        <h4>Ügyvezető</h4>
-        <p>{contact.managingDirector}</p>
-        <h4>Adminisztráció</h4>
-        <p>{contact.administration}</p>
+        <p className="mb-4">{contact.branchOffice}</p>
         <h4>E-mail</h4>
         <p>
           <a href={`mailto:${contact.email}`}>{contact.email}</a>
         </p>
+      </Card>
+
+      <Card custom="grow shrink">
+        <h4 >Ügyvezető</h4>
+        <p className="mb-4">{contact.managingDirector}</p>
+        <h4 >Adminisztráció</h4>
+        <p className="mb-4">{contact.administration}</p>
+        <h4 >Építésvezető</h4>
+        <p className="mb-4">{contact.constructor}</p>
+        
       </Card>
     </div>
 
