@@ -11,7 +11,7 @@ export const About = () => {
     <Page>
       <div className="md:flex md:justify-between py-40">
         <div className='pb-10 md:pb-0'>
-        <h2>{about.name}</h2>
+        <h1>{about.name}</h1>
         <h3>{about.position}</h3>
 
         </div>

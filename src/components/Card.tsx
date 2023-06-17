@@ -7,7 +7,7 @@ type Props = {
 
 export const Card: FC<Props> = ({children, custom}) => {
   return (
-    <div className={`bg-white rounded-xl p-1 md:p-8 ${custom}`}>
+    <div className={`bg-white rounded-xl p-2 md:p-8 ${custom}`}>
         {children}
     </div>
   )

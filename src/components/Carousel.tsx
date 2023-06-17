@@ -4,6 +4,7 @@ import 'swiper/css';
 // import "swiper/css/pagination";
 // import "swiper/css/navigation";
 import { FC } from 'react';
+import { Card } from './Card';
 
 type Props = {
   // children: ReactNode;
@@ -20,6 +21,7 @@ export const Carousel:FC<Props> = ({slides}) => {
       onSwiper={(swiper) => console.log(swiper)}
       loop={true}
       grabCursor={true}
+      
       // pagination={{
       //   clickable: true,
       // }}
@@ -31,11 +33,15 @@ export const Carousel:FC<Props> = ({slides}) => {
     // }}
    
     >
+      
       {slides.map((slide)=> 
-        <SwiperSlide className='h-60 md:h-128 bg-white flex justify-center'>
+        <SwiperSlide className='h-60 md:h-128 bg-white flex justify-center mb-4
+        md:p-8 rounded-xl'>
+            
           <img  className='object-contain' src={slide}></img>
           </SwiperSlide>
       )}
+     
       
     </Swiper>
   );
