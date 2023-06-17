@@ -4,7 +4,6 @@ import 'swiper/css';
 // import "swiper/css/pagination";
 // import "swiper/css/navigation";
 import { FC } from 'react';
-import { Card } from './Card';
 
 type Props = {
   // children: ReactNode;
