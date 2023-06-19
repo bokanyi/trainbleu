@@ -24,7 +24,7 @@ type About = {
   name: string;
   position: string;
   about: string;
-  resume: string;
+  description: string;
   experiences: Experience[];
   services: Reference[];
   publications: Publication[];
@@ -48,9 +48,9 @@ type BasicContent = {
 
 const about: About = {
   name: "Vizi Gábor",
-  position: `Közlekedésépítő mérnök\nFelelős műszaki vezető\nMV-KÉ 16 50529`,
-  about: "",
-  resume: "",
+  position: `Közlekedésépítő mérnök\nFelelős műszaki vezető\nMV-KÉ 1650529`,
+  about: "Cégünk 2007 áprilisában alakult.",
+  description: "Cégünk reklámtevékenységre minimális költséget fordít, az elvégzett munkák minőségét tartja legfőbb reklámhordozójának.",
   experiences: [
     {
       years: "2020-",

@@ -13,11 +13,12 @@ export const About = () => {
         <div className='pb-10 md:pb-0'>
         <h1>{about.name}</h1>
         <h3>{about.position}</h3>
-
         </div>
         <img className="object-cover w-80 h-80 rounded-lg" src="./VG2011.jpg" alt="" />
       </div>
-      <div  className="flex flex-col gap-4 "> 
+      <div  className="flex flex-col gap-4 mt-4 "> 
+    <h4>{about.about}</h4>
+    <p>{about.description}</p>
         <h2>Munkakörök</h2>
         
           {about.experiences.map((experience,index)=> {
