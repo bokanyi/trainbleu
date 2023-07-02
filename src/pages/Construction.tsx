@@ -12,7 +12,7 @@ export const Construction = () => {
     return (
         <Page custom="gap-4 py-16 md:py-40 md:min-h-screen" customInner="gap-4" >
 
-      <h1>Magasépítés</h1>
+      <h1>Ház/ lakás felújítás</h1>
       {/* <div className="flex flex-col gap-4" > */}
       <p>{about.services[0].description}</p>
             <p>{about.services[0].details}</p>

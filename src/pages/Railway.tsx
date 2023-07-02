@@ -14,7 +14,7 @@ export const Railway = () => {
 
     {/* <div className="flex flex-col gap-4"> */}
       {/* <img src="./public/contact.jpeg" alt="" /> */}
-      <h1>Vasút</h1>
+      <h1>Vasúti pálya építés</h1>
       <p>{about.services[1].description}</p>
             <p>{about.services[1].details}</p>
 

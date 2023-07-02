@@ -59,7 +59,7 @@ export const Form = () => {
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
           setOpen(false);
-          setValues({ user: "bokanyiimre@gmail.com", name: "", email: "", text: "" });
+          setValues({ user: "trainbleukft@gmail.com", name: "", email: "", text: "" });
         },
         function (error) {
           console.log("FAILED...", error);

@@ -18,7 +18,7 @@ export default function Navbar() {
         <CustomButton onPress={() => navigate("/")} custom="bg-white"><p>Főoldal</p></CustomButton>
         <CustomButton onPress={() => navigate("/about")} custom="bg-white" ><p>Rólunk</p></CustomButton>
         <CustomButton onPress={() => navigate("/construction")} custom="bg-blue-700 text-white" ><p>Ház/ lakás felújítás</p></CustomButton>
-        <CustomButton onPress={() => navigate("/railway")} custom="bg-blue-700 text-white" ><p>Vasút</p></CustomButton>
+        <CustomButton onPress={() => navigate("/railway")} custom="bg-blue-700 text-white" ><p>Vasúti pálya építés</p></CustomButton>
         <CustomButton onPress={() => navigate("/contact")} custom="bg-white" ><p>Kapcsolat</p></CustomButton>
   
       </div>
